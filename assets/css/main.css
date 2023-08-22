@@ -570,8 +570,9 @@ section {
 /*--------------------------------------------------------------
 # program Section
 --------------------------------------------------------------*/
-.program .program-img {
-  min-height: 500px;
+.program img {
+  max-width: 100%;
+  height: auto;
 }
 
 .program h3 {
@@ -924,8 +925,7 @@ section {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.carousel-inner
-{
+.carousel-inner {
   display: flex;
   align-items: center;
 }
