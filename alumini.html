@@ -49,12 +49,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#program">Program</a></li>
-          <li><a href="#teachers">Teachers</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="dropdown"><a href="alumini.html"><span>Alumini</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#program">Program</a></li>
+          <li><a href="index.html#teachers">Teachers</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li class="dropdown"><a href="alumini.html" class="active"><span>Alumini</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#2015">2015</a></li>
               <li><a href="#2016">2016</a></li>
@@ -64,7 +64,7 @@
               <li><a href="#2020">2020</a></li>
             </ul>
           </li>
-          <li><a class="active" href="calander.html">Student Calander</a></li>
+          <li><a href="calander.html">Student Calander</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -73,16 +73,92 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </div>
   </header><!-- End Header -->
-  <main class="bg-light py-5">
-    <div class="container container-fluid w-100 pt-5" data-aos="fade-up">
-      <h1>Grade 11</h1>
-      <iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;showTz=0&amp;height=800&amp;wkst=2&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=4mv7qmbboac77c22heucnf6lq8%40group.calendar.google.com&amp;ctz=America%2FVancouver" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
+  <!-- ======= Hero Section ======= -->
+  <section class="hero d-flex align-items-center section-bg">
+    <div class="container p-5 text-center">
+      <h2>Our Students</h2>
+        <h4>
+          <a href="#2015"  class="m-5">2015</a>
+          <a href="#2016"  class="m-5">2016</a>
+          <a href="#2017"  class="m-5">2017</a>
+          <a href="#2018"  class="m-5">2018</a>
+          <a href="#2019"  class="m-5">2019</a>
+          <a href="#2020"  class="m-5">2020</a>
+        </h4>
     </div>
-    <div class="container container-fluid w-100 pt-5" data-aos="fade-up">
-      <h1>Grade 12</h1>
-      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=800&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=fhapcalcbc%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FVancouver" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-  </main>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="2015" class="chefs">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Teachers</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="chef-member">
+
+              <div class="member-info">
+                <h4>Mr. Ahn</h4>
+                <span>Program Coordinator & Maths Teacher</span>
+                <span><a href="ahn_j@surreyschools.ca">ahn_j@surreyschools.ca</a></span>
+                <p>Mr. Ahn is the Program Coordinator for the Integrated Math and Science Academy. He is also the Academy's Senior Mathematics Teacher as well the AP Calculus teacher.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/teachers/davis.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Ms. Davis</h4>
+                <span>Senior Chemistry Teacher</span>
+                <span><a href="davis_l@surreyschools.ca">davis_l@surreyschools.ca</a></span>
+                <p>Ms. Davis is our senior chemistry teacher at the integrated math and science academy. She is responsible for all the chemistry laboratory work as well as teaching Chemistry 11 and Chemistry 12.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/teachers/strudawg.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Mr. Struik</h4>
+                <span>Physics Teacher</span>
+                <span><a href="struik_j@surreyschools.ca">struik_j@surreyschools.ca</a></span>
+                <p>Mr. Struik is the Academy's Physics teacher. He is responsible for all the physics laboratory work as well as teaching Physics 11 and Physics 12.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/teachers/desrochers.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Ms. Desrochers</h4>
+                <span>Coding and Design Teacher</span>
+                <span><a href="desrochers_s@surreyschools.ca">desrochers_s@surreyschools.ca</a></span>
+                <p>Ms. Desrochers is the Academy's Coding and Design Teacher who will also be helping the students with their Capstone projects.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+        </div>
+      </div>
+    </section><!-- End Chefs Section -->
+
+  </main><!-- End #main -->
+
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
@@ -135,6 +211,7 @@
         Website Design by Albert Guo '24
       </div>
     </div>
+
   </footer>
   <!-- End Footer -->
 
@@ -157,6 +234,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
