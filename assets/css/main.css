@@ -255,12 +255,6 @@ section {
   border-bottom: 1px solid #fff;
 }
 
-@media (max-width: 575px) {
-  .header {
-    height: 70px;
-  }
-}
-
 .header.sticked {
   border-color: #fff;
   border-color: #eee;
