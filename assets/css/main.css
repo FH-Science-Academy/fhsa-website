@@ -1644,3 +1644,11 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+.footnote {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: rgba(33, 37, 41, 0.7);
+}
