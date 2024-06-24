@@ -599,11 +599,6 @@ section {
   color: var(--color-primary);
 }
 
-.program .content ul {
-  list-style: none;
-  padding: 0;
-}
-
 .program .content ul li {
   padding: 0 0 8px 26px;
   position: relative;
@@ -1651,4 +1646,8 @@ section {
   padding-top: 15px;
   line-height: 26px;
   color: rgba(33, 37, 41, 0.7);
+}
+
+h4 {
+  margin-top: 1rem;
 }
