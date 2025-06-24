@@ -36,9 +36,9 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        # bump to v2 so that upload-artifact inside is on v4 (no deprecation)
+        uses: actions/upload-pages-artifact@v2
         with:
-          # Upload entire repository as the artifact
           path: '.'
 
       - name: Deploy to GitHub Pages
