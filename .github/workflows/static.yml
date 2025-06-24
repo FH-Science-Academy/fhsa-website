@@ -29,12 +29,10 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: "."            # your built/static site root
+          path: "."          # the directory (root or your build output)
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
-        with:
-          folder: "."          # point at the same directory
+        uses: actions/deploy-pages@v4
