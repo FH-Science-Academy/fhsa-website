@@ -1651,3 +1651,15 @@ section {
 h4 {
   margin-top: 1rem;
 }
+
+body, p, li, ul, ol, a, span, div, input, button, table, th, td {
+  font-family: var(--font-default) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary) !important;
+}
+
+.section-header h2, .why-box h3, .icon-box h4 {
+  font-family: var(--font-secondary) !important;
+}
