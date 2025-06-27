@@ -1476,7 +1476,7 @@ section {
   background-size: cover;
   position: relative;
   min-height: 60vh;
-  padding: 160px 0 60px 0;
+  padding: 110px 0 40px 0;
 }
 
 .hero h2 {
@@ -1539,17 +1539,73 @@ section {
   color: rgba(206, 18, 18, 0.8);
 }
 
-@media (max-width: 640px) {
-  .hero h2 {
-    font-size: 36px;
-  }
+.hero-title {
+  font-size: 3.5rem !important; /* Larger than default h2 */
+  font-weight: 700;
+  line-height: 1.05;
+  margin-top: 2.5rem !important; /* Add space above the title */
+  margin-bottom: 0.1rem !important; /* Minimal space below title */
+}
 
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
-    font-size: 14px;
+/* Remove extra margin from hero h2 if present */
+.hero h2.hero-title {
+  margin-top: 2.5rem !important;
+  margin-bottom: 0.1rem !important;
+}
+
+/* Optionally, reduce top padding of hero section for less vertical space overall */
+.hero {
+  padding-top: 110px;
+  padding-bottom: 40px;
+}
+
+/* Make the hero intro paragraph wider on large screens */
+@media (min-width: 992px) {
+  .hero .col-lg-5.order-2.order-lg-1 {
+    max-width: 60%;
+    flex: 0 0 60%;
+  }
+  .hero .col-lg-5.order-1.order-lg-2 {
+    max-width: 40%;
+    flex: 0 0 40%;
   }
 }
 
+/* Prevent slideshow images from overlapping the hero title */
+@media (min-width: 992px) {
+  .hero .col-lg-5.order-1.order-lg-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .hero #intro-slides {
+    margin-top: 2rem;
+    /* Ensure enough space below the title */
+  }
+}
+
+/* Ensure all slideshow images and iframes in the hero section share the same top alignment */
+.hero #intro-slides .carousel-inner {
+  display: flex;
+  align-items: flex-start;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.hero #intro-slides .carousel-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center;
+  height: 400px;
+}
+
+.hero #intro-slides img,
+.hero #intro-slides iframe {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+  align-self: flex-start;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1592,17 +1648,18 @@ section {
 
 .footer .footer-links ul li:first-child {
   padding-top: 0;
+  line-height: 1;
 }
 
 .footer .footer-links ul a {
-  color: rgba(255, 255, 255, 0.6);
-  transition: 0.3s;
+  color: #fff;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-links ul a:hover {
-  color: #fff;
+  color: #ce1212;
+  text-decoration: underline;
 }
 
 .footer .social-links a {
@@ -1622,6 +1679,7 @@ section {
 .footer .social-links a:hover {
   color: #fff;
   border-color: #fff;
+  background: #ce1212;
 }
 
 .footer .copyright {
@@ -1638,6 +1696,8 @@ section {
 
 .footer .credits a {
   color: #fff;
+  text-align: center;
+  font-size: 13px;
 }
 
 .footnote {
@@ -1650,6 +1710,8 @@ section {
 
 h4 {
   margin-top: 1rem;
+  line-height: 26px;
+  color: rgba(33, 37, 41, 0.7);
 }
 
 body, p, li, ul, ol, a, span, div, input, button, table, th, td {
