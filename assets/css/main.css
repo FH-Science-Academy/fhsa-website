@@ -1539,14 +1539,25 @@ section {
   color: rgba(206, 18, 18, 0.8);
 }
 
-@media (max-width: 640px) {
-  .hero h2 {
-    font-size: 36px;
-  }
+/* Hero Section with Background Image and White Hue Overlay */
+#hero.section-bg {
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.5)), url('../img/home-bg.jpg') center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
 
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
-    font-size: 14px;
+/*
+  To adjust the white hue (brightness/opacity):
+  - Increase the numbers in rgba(255,255,255,0.5) for a stronger white overlay (e.g., 0.7 for more white, 0.3 for less).
+  - You can also use two different opacities for top and bottom for a gradient effect.
+  Example:
+    linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.4)), ...
+*/
+
+@media (min-width: 1365px) {
+  #hero.section-bg {
+    background-attachment: fixed;
   }
 }
 
